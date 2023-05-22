@@ -88,3 +88,17 @@ container.bind<UserRepository>(UserRepository).toSelf();
 let userController = container.get<UserController>(UserController);
 
 let userRouter = new UserRouter(userController);
+
+
+// InversifyJS requires emitDecoratorMetadata and experimentalDecorators to be enabled in tsconfig.json
+// {
+//   "compilerOptions": {
+//     "target": "ES5",
+//     "lib": ["es6"],
+//     "types": ["reflect-metadata"],
+//     "module": "commonjs",
+//     "moduleResolution": "node",
+//     "experimentalDecorators": true,
+//     "emitDecoratorMetadata": true
+//   }
+// }
