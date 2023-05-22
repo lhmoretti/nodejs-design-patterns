@@ -1,3 +1,5 @@
+import { User } from "./UserModel";
+
 // The UserService uses the UserRepository to fetch and manipulate data
 class UserService {
   constructor(private userRepository: UserRepository) {}

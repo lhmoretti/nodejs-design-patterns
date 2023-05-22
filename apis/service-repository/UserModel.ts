@@ -1,5 +1,5 @@
 // Define a User Interface and a UserRepository to work with Users
-interface User {
+export class User {
   id: string;
   name: string;
   // ...

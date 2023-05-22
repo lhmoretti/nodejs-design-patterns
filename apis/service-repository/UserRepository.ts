@@ -1,3 +1,5 @@
+import { User } from "./UserModel";
+
 class UserRepository {
   // This could be a connection to a database or an ORM
   private dataSource: any;
